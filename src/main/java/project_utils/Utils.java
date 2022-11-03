@@ -1,8 +1,8 @@
 package project_utils;
 
 public class Utils {
-    public static boolean checkForEmptyArrayInt(int[] array){
-        if (array.length != 0 ){
+    public static boolean checkForEmptyArrayInt(int[] array) {
+        if (array.length != 0) {
 
             return true;
         } else {
@@ -11,8 +11,8 @@ public class Utils {
         }
     }
 
-    public static boolean checkForEmptyArrayDouble (double [] array){
-        if (array.length != 0){
+    public static boolean checkForEmptyArrayDouble(double[] array) {
+        if (array.length != 0) {
 
             return true;
         } else {
@@ -21,21 +21,30 @@ public class Utils {
         }
     }
 
-    public static int lengthArray(int[] array){
+    public static int lengthArray(int[] array) {
         int count = 0;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             count++;
         }
 
         return count;
     }
 
-    public static int lengthArray (double[] array){
+    public static int lengthArray(double[] array) {
         int count = 0;
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             count++;
         }
 
         return count;
     }
-}
+
+    public static boolean isStringNotNullAndNotEmpty(String line) {
+        if (line != null) {
+
+            return !line.trim().isEmpty();
+            }
+
+            return false;
+        }
+    }
